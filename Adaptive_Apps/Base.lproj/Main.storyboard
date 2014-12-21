@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C81f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="g79-Vu-ofC">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -31,7 +32,24 @@
                     <view key="view" contentMode="scaleToFill" id="MBV-o1-s0R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laptop" translatesAutoresizingMaskIntoConstraints="NO" id="tdB-ZL-BdW">
+                                <rect key="frame" x="0.0" y="58" width="600" height="232"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Silver Laptop" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KaY-Bh-WUj">
+                                <rect key="frame" x="16" y="312" width="568" height="242"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3J4-lC-cqK" firstAttribute="top" secondItem="tdB-ZL-BdW" secondAttribute="bottom" constant="310" id="4lb-50-TlP"/>
+                            <constraint firstAttribute="trailing" secondItem="tdB-ZL-BdW" secondAttribute="trailing" id="9Lj-XW-9Ds"/>
+                            <constraint firstItem="tdB-ZL-BdW" firstAttribute="top" secondItem="MBV-o1-s0R" secondAttribute="topMargin" constant="58" id="cjc-YZ-WGH"/>
+                            <constraint firstItem="tdB-ZL-BdW" firstAttribute="leading" secondItem="MBV-o1-s0R" secondAttribute="leading" id="ulc-cE-7RW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Acme Computer Shop" id="Gw6-zh-1Bd"/>
                 </viewController>
@@ -40,4 +58,7 @@
             <point key="canvasLocation" x="434" y="1157"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Laptop" width="932" height="340"/>
+    </resources>
 </document>

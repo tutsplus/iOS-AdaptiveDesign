@@ -27,7 +27,7 @@
                     <rect key="frame" x="49" y="213" width="382" height="128"/>
                     <constraints>
                         <constraint firstAttribute="height" priority="750" constant="128" id="VpQ-6p-u6W"/>
-                        <constraint firstAttribute="width" priority="750" constant="240" id="t9L-YA-gr1"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" priority="750" constant="240" id="t9L-YA-gr1"/>
                     </constraints>
                 </imageView>
             </subviews>
